@@ -7,12 +7,14 @@
 
 body { 
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
-    font-family: "Inter", Sans-serif;
+}
+
+body * {
     color: white;
+    font-family: "Inter", Sans-serif;
 }
 
 #container {
-    border: 1px solid red;
     width: 360px;
     height: 712px;
     margin: 56px auto;
@@ -36,4 +38,62 @@ body {
     font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: all .3s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid white;
+}
+
+/*Social Links */
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 50%;
+    transition: background 0.2;
+}
+
+#social-links a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
 }
